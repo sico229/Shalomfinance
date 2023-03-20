@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Montserrat+Alternates:wght@200&display=swap");
+section {
+  min-height: 50vh;
+}
+section a {
+  background-color: #00915a;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+section a:hover {
+  transition: 0.2s;
+  background-color: #036640;
+  transform: scale(1.01);
+}
+
+#section1, #section1l {
+  position: relative;
+  height: auto;
+  background-image: url("../../public/img/Comptes/I1.jpg");
+  background-size: cover;
+  background-position: center center;
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+#section1 .cover, #section1l .cover {
+  background-color: rgba(30, 4, 31, 0.5568627451);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section1 .cover h2, #section1l .cover h2 {
+  font-weight: bolder;
+  color: #fff;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+#section1l {
+  background-image: url("../../public/img/comptes/l2.jpg");
+}
+
+#section2 {
+  padding: 20px;
+  min-height: 50vh;
+}
+#section2 p {
+  font-size: 1.5em;
+}
+#section2 > div details summary {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #00915a;
+}
+#section2 > div details a {
+  background-color: #036640;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  transition: 0.2s;
+}
+#section2 > div details a:hover {
+  background-color: #00915a;
+  transition: 0.2s;
+}
+
+#section3 {
+  padding: 10px 20px;
+  min-height: auto;
+}
+#section3 h4 {
+  font-weight: bold;
+  color: #036640;
+}
+#section3 > h6 {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 0;
+}
+#section3 > div {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+#section3 > div > div {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #00915a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#section3 > div > div > p {
+  font-weight: bold;
+  color: #fff;
+  padding: 0 5px;
+  text-align: center;
+}
+#section3 > div > div > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #036640;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bold;
+}
+#section3 > div > div:hover {
+  transition: 0.2s;
+  background-color: #036640;
+}
+#section3 > div > div:hover > span {
+  background-color: #00915a;
+}
+
+@media screen and (max-width: 730px) {
+  #section2 > div details summary {
+    font-size: 1.5em;
+  }
+  #section3 > div {
+    flex-direction: column;
+  }
+  #section3 > div > div {
+    margin: 10px 0;
+  }
+}
+
+/*# sourceMappingURL=Comptes.css.map */
