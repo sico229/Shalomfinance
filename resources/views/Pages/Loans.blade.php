@@ -1,91 +1,93 @@
 @extends('Template.layout2')
 @section('styles')
     <link rel="stylesheet" href="{{ asset('public/css/Comptes.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/Loans.css') }}">
 @endsection
 @section('contenu')
     <section id="section1l">
         <div class="cover">
-            <h2> Nos Offres de Prêt</h2>
+            <div>
+                <h4 class="w-100 text-center">Nos Offres de Prêts</h4>
+                <p class="w-100 text-center">Nous vous proposons des formules de prêts variées pour mieux répondre à vos
+                    besoins de financement</p>
+                <div>
+                    <a href="{{ route('Conditions') }}">Voir nos conditions</a>
+                    <a href="{{ route('LoanSimulator') }}">Simulez votre prêt</a>
+                </div>
+                <p>Un crédit vous engage et doit être remboursé. Vérifiez vos capacités de remboursement avant de vous
+                    engager.</p>
+            </div>
         </div>
     </section>
     <section id="section2">
-        <p>Nos offres de prêts spécialement étudiées pour vous accompagner dans vos projets</p>
+        <p>Découvrez nos différentes formules de prêts et leurs avantages</p>
 
         <div>
-            <details>
+            <details open>
                 <summary>Le Prêt Consommation</summary>
-                <div class="container px-2 row">
-                    <div class="col-md-6">
-                        <p>Le compte épargne est une formule de compte encore appelé livret</p>
-                        <p>Ce type de compte bancaire vous permet de mettre une partie de vos revenues de côté pour un
-                            projet à
-                            court, moyen ou long terme.</p>
-                        <p>Votre épargne est rémunéré à hauteur de 3.4% l'an net d'impôt</p>
-                        <p>Votre argent est disponible 24H sur 24</p>
-                        <p><a class="btn btn-center" href="{{ route('LoanRequest') }}">Ouvrir un compte Epargne</a></p>
+                <p>Un besoin, un projet ? Découvrez nos solutions de financement pour vous accompagner.</p>
+                <p>Nous vous offrons plusieurs crédits à la consommation</p>
+                <div>
+                    <div>
+                        <div>
+                            <div></div>
+                            <h5>Prêt Auto</h5>
+                        </div>
+                        <p>Un crédit adapté pour financer tout type de véhicule (voiture neuve, d'occasion, moto...).</p>
+                        <div>
+                            <p>Jusqu'à 75000€</p>
+                            <p>Jusqu'à 108 Mois</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="">Demander un Prêt</a>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <img class="img img-thumbnail" src="{{ asset('public/img/comptes/epargne.jpg') }}" alt="">
+                    <div>
+                        <div>
+                            <div></div>
+                            <h5>Prêt travaux</h5>
+                        </div>
+                        <p>Un crédit dédié au financement de vos travaux de décoration ou d'aménagement</p>
+                        <div>
+                            <p>Jusqu'à 75000€</p>
+                            <p>Jusqu'à 108 Mois</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="">Demander un Prêt</a>
+                        </div>
                     </div>
-                </div>
-            </details>
-            <details>
-                <summary>Le Prêt Perso</summary>
-                <div class="container px-2 row">
-                    <div class="col-md-6">
-                        <p>Le compte courant vous permet de domicilier votre argent chez nous.</p>
-                        <p>Votre compte courant vous permet de bénéficier d'une carte de crédit visa pour vos retraits dans
-                            les
-                            distributeurs et pour les achats</p>
-                        <p>En ouvrant un compte courant chez nous, vous bénéficiez d'un accompagnement personnalisé et de
-                            nombreuses
-                            solutions innovantes</p>
-                        <p>Votre argent est disponible 24H sur 24</p>
-                        <p><a class="btn btn-center" href="{{ route('LoanRequest') }}">Ouvrir un compte Courant</a></p>
+                    <div>
+                        <div>
+                            <div></div>
+                            <h5>Prêt Projet</h5>
+                        </div>
+                        <p>Le mini-prêt Coup de Pouce par FLOA pour financer vos projets immédiats.</p>
+                        <div>
+                            <p>Jusqu'à 1000€</p>
+                            <p>Jusqu'à 03 Mois</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="">Demander un Prêt</a>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <img src="{{ asset('public/img/comptes/courant.webp') }}" alt="" class="img img-thumbnail">
-                    </div>
-                </div>
-            </details>
-            <details>
-                <summary>Le Prêt Immobilier</summary>
-                <div class="container px-2 row">
-                    <div class="col-md-6">
-                        <p>Le compte courant vous permet de domicilier votre argent chez nous.</p>
-                        <p>Votre compte courant vous permet de bénéficier d'une carte de crédit visa pour vos retraits dans
-                            les
-                            distributeurs et pour les achats</p>
-                        <p>En ouvrant un compte courant chez nous, vous bénéficiez d'un accompagnement personnalisé et de
-                            nombreuses
-                            solutions innovantes</p>
-                        <p>Votre argent est disponible 24H sur 24</p>
-                        <p><a class="btn btn-center" href="{{ route('LoanRequest') }}">Ouvrir un compte Courant</a></p>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="{{ asset('public/img/comptes/pro.webp') }}" alt="" class="img img-thumbnail">
-                    </div>
-                </div>
-            </details>
-            <details>
-                <summary>Le Prêt Consommation</summary>
-                <div class="container px-2 row">
-                    <div class="col-md-6">
-                        <p>Le compte courant vous permet de domicilier votre argent chez nous.</p>
-                        <p>Votre compte courant vous permet de bénéficier d'une carte de crédit visa pour vos retraits dans
-                            les
-                            distributeurs et pour les achats</p>
-                        <p>En ouvrant un compte courant chez nous, vous bénéficiez d'un accompagnement personnalisé et de
-                            nombreuses
-                            solutions innovantes</p>
-                        <p>Votre argent est disponible 24H sur 24</p>
-                        <p><a class="btn btn-center" href="{{ route('LoanRequest') }}">Ouvrir un compte Courant</a></p>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="{{ asset('public/img/comptes/pro.webp') }}" alt="" class="img img-thumbnail">
+                    <div>
+                        <div>
+                            <div></div>
+                            <h5>Prêt Jeune</h5>
+                        </div>
+                        <p>Le mini-prêt Coup de Pouce par FLOA pour financer vos projets immédiats.</p>
+                        <div>
+                            <p>Jusqu'à 1000€</p>
+                            <p>Jusqu'à 03 Mois</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="">Demander un Prêt</a>
+                        </div>
                     </div>
                 </div>
+
             </details>
+
         </div>
     </section>
     <section id="section2">

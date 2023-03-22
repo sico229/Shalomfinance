@@ -1,0 +1,184 @@
+@import "_variables.scss";
+.cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+
+
+    &>div{
+        height: auto;
+        padding: 20px 10px;
+        width:50%;
+        background-color: #ffffff91;
+        font-weight: bold;
+        margin: 10px 0;
+
+        h4{
+            font-weight: inherit;
+            color: $themeColor2;
+        }
+
+        &>div{
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+
+            &>a{
+                &:hover{
+                    transform: scale(1.02);
+                }
+                &:nth-child(1){
+                    
+                    background-color: #fff;
+                    color: $themeColor2;
+
+                    
+                }
+                &:nth-child(2){
+                    background-color: $themeColor2;
+                }
+            }
+        }
+
+        &>p{
+            text-align: center !important;
+            &:nth-child(2){                
+                font-size: 1.3em;
+            }
+        }
+    }
+}
+
+#section2{
+    &>p{
+        font-size: 1.2em;
+    }
+
+    &>div{
+        &>details{
+            &>summary{
+                font-size: 1.5em;
+
+            }
+            &>div{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+
+                &>div{
+                    &>div:nth-child(1){
+                        height: 150px;
+                        width: 100%;
+                        background-image: url('../../public/img/loans/auto.jpg');
+                        background-position: center center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                    }
+                }
+                &>div:nth-child(2){
+                    &>div:nth-child(1){
+                        background-image: url('../../public/img/loans/pret-travaux.webp');
+                    }
+                }
+                &>div:nth-child(3){
+                    &>div:nth-child(1){
+                        background-image: url('../../public/img/loans/magasins-de-vêtements.jpg');
+                    }
+                }
+                &>div:nth-child(4){
+                    &>div:nth-child(1){
+                        background-image: url('../../public/img/loans/ass.jpg');
+                    }
+                }
+
+                &>div{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    background-color: #fff;
+                    box-shadow: 2px 0px 5px #302a2a;
+                    padding:0 0 30px 0;
+                    &>p{
+                        font-size: 1.2em;
+                    }
+                    &>div:nth-child(1){
+                        
+
+                       
+
+                        &>div{
+                            position: absolute;
+                            content: "";
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            z-index: 1;
+                            background-color: #0b4936a6;
+                        }
+                        &>h5{
+                            z-index: 2;
+                            font-weight: bold;
+                            color: #fff;
+                            text-transform: uppercase;
+                        }
+                    }
+                    &>div:nth-child(2),&>p,&>div:nth-child(3){
+                        padding: 10px;
+                    }
+                    &>div:nth-child(3){
+                        display: flex;
+                        &>p{
+                            padding: 5px 10px !important;
+                        }
+                        &>p:nth-child(1){
+                            border-right:1px solid $themeColor1;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:720px) {
+    .cover{
+        &>div{
+            width: 90%;
+            
+            h4{
+                font-size: 1.2em;
+            }
+
+            &>p,&>p:nth-child(1){
+                font-size: 0.9em !important;
+            }
+            
+
+            &>div{
+                a{
+                    font-size: 0.7em;
+                }
+            }
+        }
+    }
+
+    #section2{
+        &>div{
+            &>details{
+                &>div{
+                   
+                   grid-template-columns: 1fr;
+                        
+                }
+            }
+        }
+    }
+}

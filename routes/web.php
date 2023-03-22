@@ -25,6 +25,8 @@ Route::post('/FormulaireContact',[PagesController::class,"SaveContactForm"]);
 Route::get('/Accounts',[PagesController::class,"Comptes"])->name('Comptes');
 Route::get('/Loans',[PagesController::class,"Loans"])->name('Loans');
 Route::get('/LoanRequest',[PagesController::class,"LoanRequest"])->name('LoanRequest');
+Route::get('/Conditions',[PagesController::class,"Conditions"])->name('Conditions');
+Route::get('/LoanSimulator',[PagesController::class,"LoanSimulator"])->name('LoanSimulator');
 //Developper Routes
 Route::get('/Version',[DevelopperController::class,"Version"]);
 Route::get('/Traducteur',[DevelopperController::class,"Traducteur"]);
