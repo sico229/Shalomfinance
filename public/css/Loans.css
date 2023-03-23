@@ -112,6 +112,110 @@
   border-right: 1px solid #036640;
 }
 
+#section4d {
+  padding: 20px 10px;
+}
+#section4d h4 {
+  width: 100%;
+  padding: 5px;
+  text-transform: uppercase;
+  color: #00915a;
+  font-weight: bold;
+}
+#section4d .container {
+  border: 2px solid #00915a;
+  text-align: center;
+  height: auto;
+  padding: 20px 10px;
+}
+#section4d .container p:nth-child(1) {
+  text-decoration: underline;
+}
+#section4d .container p:nth-child(2) {
+  width: 50% !important;
+  margin: 0 auto;
+  font-weight: bold;
+}
+#section4d .container p:nth-child(3) {
+  width: 50%;
+  text-align: center;
+}
+#section4d .container h5 {
+  font-weight: bold;
+  width: 50% !important;
+  margin: 5px auto;
+  color: #02432a;
+}
+#section4d .ss {
+  border: unset;
+}
+#section4d .ss > .row {
+  display: flex;
+}
+#section4d .ss > .row > div {
+  width: 300px;
+}
+#section4d .ss > .row > div > div:nth-child(1) {
+  display: flex;
+}
+#section4d .ss > .row > div > div:nth-child(1) i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  width: 75px;
+  font-size: 2em;
+  color: #00915a;
+  height: 75px;
+  border-radius: 50%;
+  border: 2px solid #00915a;
+}
+#section4d .ss > .row > div > div:nth-child(1) h6 {
+  line-height: 75px;
+  font-weight: bold;
+  color: #00915a;
+  margin-left: 5px;
+}
+#section4d .ss > .row > div > div:nth-child(2) h4 {
+  color: #414141;
+  text-align: left;
+  font-size: 1em;
+}
+#section4d .ss > .row > div > div:nth-child(2) p {
+  width: 100% !important;
+  color: #818080;
+  text-align: left;
+  margin: 0;
+}
+
+#section3s {
+  padding: 20px 10px;
+}
+#section3s h4 {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00915a;
+  font-weight: bold;
+}
+#section3s .container .row {
+  display: flex;
+  justify-content: space-between;
+}
+#section3s .container .row > div {
+  width: 250px;
+}
+#section3s .container .row > div h6 {
+  color: #00915a;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+#section3s .container .row > div p {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 720px) {
   .cover > div {
     width: 90%;
