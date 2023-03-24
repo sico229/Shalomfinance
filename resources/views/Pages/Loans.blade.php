@@ -133,6 +133,76 @@
                         </p>
                     </div>
                 </div>
+                <div>
+                    <div>
+                        <i class="bi bi-currency-euro"></i>
+                        <h6>Remboursement anticipé</h6>
+                    </div>
+                    <div>
+                        <h4>EN FONCTION DE VOTRE BUDGET</h4>
+                        <p>
+                            Vous avez la possibilité de rembourser votre crédit de manière anticipée
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h6>BESOIN D'AIDE SUR LE PRÊT AUTO ?</h6>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="bi bi-chat-left-text-fill"></i>Faut-il un apport préalable?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Le Prêt Auto ne nécessite pas d'apport préalable. Bien entendu, un apport est toujours
+                                    utile, ne serait-ce que pour diminuer les mensualités de votre prêt et la durée de
+                                    remboursement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="bi bi-chat-left-text-fill"></i>Quels sont les montants et durées maximum?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Vous pouvez emprunter de 1 000 € à 75 000 €, sur une durée allant de 4 mois à 108 mois.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default variables.
+                                It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

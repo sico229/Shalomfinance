@@ -149,44 +149,64 @@
 #section4d .ss {
   border: unset;
 }
-#section4d .ss > .row {
+#section4d .ss > .row:nth-child(1) {
   display: flex;
 }
-#section4d .ss > .row > div {
+#section4d .ss > .row:nth-child(1) > div {
   width: 300px;
 }
-#section4d .ss > .row > div > div:nth-child(1) {
+#section4d .ss > .row:nth-child(1) > div > div:nth-child(1) {
   display: flex;
 }
-#section4d .ss > .row > div > div:nth-child(1) i {
+#section4d .ss > .row:nth-child(1) > div > div:nth-child(1) i {
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
   justify-items: center;
   width: 75px;
-  font-size: 2em;
-  color: #00915a;
   height: 75px;
   border-radius: 50%;
+  font-size: 2em;
+  color: #00915a;
   border: 2px solid #00915a;
 }
-#section4d .ss > .row > div > div:nth-child(1) h6 {
+#section4d .ss > .row:nth-child(1) > div > div:nth-child(1) h6 {
   line-height: 75px;
   font-weight: bold;
   color: #00915a;
   margin-left: 5px;
 }
-#section4d .ss > .row > div > div:nth-child(2) h4 {
+#section4d .ss > .row:nth-child(1) > div > div:nth-child(2) h4 {
   color: #414141;
   text-align: left;
   font-size: 1em;
 }
-#section4d .ss > .row > div > div:nth-child(2) p {
+#section4d .ss > .row:nth-child(1) > div > div:nth-child(2) p {
   width: 100% !important;
   color: #818080;
   text-align: left;
   margin: 0;
+}
+#section4d .ss > .row:nth-child(2) {
+  padding: 20px 10px;
+}
+#section4d .ss > .row:nth-child(2) h6 {
+  color: #00915a;
+  text-align: left;
+  padding: 10px;
+  font-weight: bold;
+}
+#section4d .ss > .row:nth-child(2) .accordion .accordion-item h2 button {
+  font-size: 1.1em;
+  color: #00915a !important;
+  font-weight: bold;
+}
+#section4d .ss > .row:nth-child(2) .accordion .accordion-item > div > .accordion-body p {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: left;
 }
 
 #section3s {
