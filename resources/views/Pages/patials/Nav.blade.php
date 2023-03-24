@@ -18,12 +18,15 @@
                 <p>{{ $version[10] }}</p>
             </a>
         </li>
+
         <li>
-            <span>
-                <i class="bi bi-umbrella-fill"></i>
-                <span>{{ $version[11] }}</span>
-            </span>
-            <p>{{ $version[12] }}</p>
+            <a href="{{ route('Assurance') }}">
+                <span>
+                    <i class="bi bi-umbrella-fill"></i>
+                    <span>{{ $version[11] }}</span>
+                </span>
+                <p>{{ $version[12] }}</p>
+            </a>
         </li>
         <li>
             <span>

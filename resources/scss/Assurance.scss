@@ -1,0 +1,160 @@
+@import "_variables.scss";
+#Section1{
+    min-height: 50vh;
+    margin: 0;
+    padding: 0;
+   
+    &>div{
+        min-height: 50vh !important;
+        background-image: url('../../public/img/assurance/1.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        width: 100%;
+        min-height: 100%;
+        z-index: 1 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+
+        &>.cover{
+            background-color: #13805f69;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        &>div:nth-child(2){
+            width: 70%;
+            background-color: #fff;
+            z-index: 2;
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &>h2{
+                font-weight: 1.3em;
+                font-weight: bold;
+                text-transform: uppercase;
+                width: 100%;
+                text-align: center;
+            }
+            &>p{
+                width: 70%;
+                text-align: center;
+                font-size: 1.1em;
+                font-weight: bold;
+
+            }
+        }
+    }
+    
+
+}
+
+#Section2{
+    background-color: #5c5b5b;
+
+    &>.container{
+        background-color: #fff;
+
+        &>.row{
+            padding: 10px 20px;
+            &>div:nth-child(1){
+                background-color: #dd5c35;
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                &>p{
+                    &:nth-child(1){
+                        padding: 10px;
+                        text-align: center;
+                        border-bottom: 1px solid #fff;
+                        font-size: 1.5em;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        justify-self: flex-start;
+                    }
+
+                    &:nth-child(2){
+                        font-size: 1.4em;
+                        font-weight: bold;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                    
+                    &:nth-child(3){
+                        text-align: center;
+                        font-weight: bolder;
+                        font-size: 1.2em;
+                    }
+                    
+                }
+            }
+        }
+
+    }
+}
+
+#Section3{
+    padding: 20px 10px;
+    h4{
+        padding: 10px 20px;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $themeColor2;
+    }
+
+    &>div{
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+        flex-direction: row wrap;
+
+        &>div{
+            width: 400px;
+            height: 350px;
+            padding: 10px;
+            margin: 0 5px;
+            border-bottom: 1px solid #7e7c7cd7;
+           div{
+            display: flex;
+            padding: 10px;
+            i{
+                color: $themeColor2;
+                font-size: 1.3em;
+                display: inline-block;
+                width: 75px;
+                height: 75px;
+                border-radius: 50%;
+                border: 2px solid $themeColor2;
+                display: flex;
+                justify-content: center;align-items: center;
+                align-content: center;justify-items: center;
+
+            }
+            
+            p{
+                font-size: 1em;
+                color: $themeColor2;
+                line-height: 75px;
+                font-weight: bold;               
+            }
+           }
+           p{
+            font-size: 1.1em;
+            font-weight: bold;
+           }
+        }
+    }
+}

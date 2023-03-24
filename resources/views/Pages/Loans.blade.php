@@ -183,25 +183,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Accordion Item #3
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                                collapse plugin adds the appropriate classes that we use to style each element. These
-                                classes control the overall appearance, as well as the showing and hiding via CSS
-                                transitions. You can modify any of this with custom CSS or overriding our default variables.
-                                It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -245,9 +227,9 @@
         </div>
     </section>
     <section id="section3">
-        <h4 class="w-100 text-center mt-5">Ouvrez votre compte en ligne depuis chez vous!</h4>
-        <h6 class="w-100 text-center">Facile et en quelques clics, ouvrez votre compte en ligne sans vous déplacer de chez
-            vous</h6>
+        <h4 class="w-100 text-center mt-5">Demandez votre Prêt depuis chez vous</h4>
+        <h6 class="w-100 text-center">Facile et en quelques clics, remplissez votre demande de prêt en ligne et recevez une
+            réponse de principe en moins de 72 heures</h6>
 
         <div>
             <div>
@@ -256,15 +238,15 @@
             </div>
             <div>
                 <span>2</span>
-                <p>Envoyez vos documents justificatifs</p>
+                <p>Recevez une réponse de principe</p>
             </div>
             <div>
                 <span>3</span>
-                <p>Votre compte en ligne est ouvert</p>
+                <p>Envoyez vos documents justificatifs</p>
             </div>
         </div>
         <div>
-            <a href="{{ route('LoanRequest') }}">Ouvrir un compte en ligne</a>
+            <a href="{{ route('LoanRequest') }}">Demandez un prêt</a>
         </div>
     </section>
 @endsection
