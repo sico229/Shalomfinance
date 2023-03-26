@@ -52,7 +52,7 @@
 }
 
 #Section2 {
-  background-color: #5c5b5b;
+  padding-left: 75px;
 }
 #Section2 > .container {
   background-color: #fff;
@@ -89,38 +89,38 @@
 }
 
 #Section3 {
-  padding: 20px 10px;
+  padding: 20px 10px 20px 75px;
 }
-#Section3 h4 {
+#Section3 > .container h4 {
   padding: 10px 20px;
   font-size: 1.5em;
   font-weight: bold;
   text-transform: uppercase;
   color: #00915a;
 }
-#Section3 > div {
-  display: flex;
-  width: 100vw;
-  justify-content: space-between;
-  flex-direction: row wrap;
+#Section3 > .container > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
 }
-#Section3 > div > div {
-  width: 400px;
-  height: 350px;
+#Section3 > .container > div > div {
+  height: 300px;
   padding: 10px;
   margin: 0 5px;
   border-bottom: 1px solid rgba(126, 124, 124, 0.8431372549);
 }
-#Section3 > div > div div {
+#Section3 > .container > div > div div {
   display: flex;
+  flex-direction: row wrap;
   padding: 10px;
 }
-#Section3 > div > div div i {
+#Section3 > .container > div > div div i {
   color: #00915a;
   font-size: 1.3em;
   display: inline-block;
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
   border-radius: 50%;
   border: 2px solid #00915a;
   display: flex;
@@ -129,15 +129,40 @@
   align-content: center;
   justify-items: center;
 }
-#Section3 > div > div div p {
+#Section3 > .container > div > div div p {
   font-size: 1em;
   color: #00915a;
-  line-height: 75px;
+  line-height: 50px;
   font-weight: bold;
 }
-#Section3 > div > div p {
+#Section3 > .container > div > div p {
   font-size: 1.1em;
   font-weight: bold;
+}
+
+#Section4, #Section5 {
+  padding: 20px 10px 20px 75px;
+}
+#Section4 .container, #Section5 .container {
+  padding: 20px;
+  background-color: rgba(166, 235, 214, 0.6784313725);
+}
+#Section4 .container h4, #Section5 .container h4 {
+  color: #00915a;
+  font-size: 2em;
+}
+
+#Section5 .container {
+  background-color: #fff;
+}
+#Section5 .container .accordion .accordion-item button {
+  color: #00915a;
+  padding: 20px 5px;
+  font-size: 1em;
+  font-weight: bold;
+}
+#Section5 .container .accordion .accordion-item button i {
+  padding: 0 5px;
 }
 
 @media screen and (max-width: 720px) {
@@ -153,6 +178,7 @@
   }
   #Section2 {
     background-color: #5c5b5b;
+    padding: 10px;
   }
   #Section2 > .container {
     background-color: #fff;
@@ -190,26 +216,26 @@
   #Section3 {
     padding: 20px 10px;
   }
-  #Section3 h4 {
+  #Section3 .container h4 {
     padding: 10px 10px;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
     color: #00915a;
     text-align: center;
   }
-  #Section3 > div {
+  #Section3 .container > div {
     display: flex;
     flex-direction: column;
   }
-  #Section3 > div > div {
+  #Section3 .container > div > div {
     height: auto;
     margin: 10px auto;
     padding: 10px;
     border-bottom: 1px solid rgba(126, 124, 124, 0.8431372549);
     width: 90vw;
   }
-  #Section3 > div > div div {
+  #Section3 .container > div > div div {
     display: flex;
     width: 100%;
     margin: 10px auto;
@@ -217,7 +243,7 @@
     align-items: center;
     padding: 10px;
   }
-  #Section3 > div > div div i {
+  #Section3 .container > div > div div i {
     color: #00915a;
     font-size: 1.3em;
     display: inline-block;
@@ -231,7 +257,7 @@
     align-content: center;
     justify-items: center;
   }
-  #Section3 > div > div div p {
+  #Section3 .container > div > div div p {
     font-size: 1em;
     color: #00915a;
     font-weight: bold;
@@ -240,9 +266,26 @@
     padding: 5px 0;
     font-weight: bold;
   }
-  #Section3 > div > div p {
+  #Section3 .container > div > div p {
     font-size: 1.1em;
     font-weight: bold;
+  }
+  #Section4 {
+    padding: 20px 10px;
+  }
+  #Section5 {
+    padding: 20px 10px;
+  }
+  #Section5 .container h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  #Section5 .container .accordion .accordion-item button {
+    font-size: 0.7em;
+    font-weight: bold;
+  }
+  #Section5 .container .accordion .accordion-item button i {
+    font-size: 1.1em;
   }
 }
 
