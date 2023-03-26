@@ -140,4 +140,110 @@
   font-weight: bold;
 }
 
+@media screen and (max-width: 720px) {
+  #Section1 > div > div:nth-child(2) {
+    width: 90%;
+  }
+  #Section1 > div > div:nth-child(2) > h2 {
+    font-size: 1.1em;
+  }
+  #Section1 > div > div:nth-child(2) > p {
+    font-size: 0.9em;
+    width: 95%;
+  }
+  #Section2 {
+    background-color: #5c5b5b;
+  }
+  #Section2 > .container {
+    background-color: #fff;
+  }
+  #Section2 > .container > .row {
+    padding: 10px 20px;
+  }
+  #Section2 > .container > .row > div:nth-child(1) {
+    background-color: #dd5c35;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #Section2 > .container > .row > div:nth-child(1) > p:nth-child(1) {
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    justify-self: flex-start;
+  }
+  #Section2 > .container > .row > div:nth-child(1) > p:nth-child(2) {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #Section2 > .container > .row > div:nth-child(1) > p:nth-child(3) {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1em;
+  }
+  #Section3 {
+    padding: 20px 10px;
+  }
+  #Section3 h4 {
+    padding: 10px 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00915a;
+    text-align: center;
+  }
+  #Section3 > div {
+    display: flex;
+    flex-direction: column;
+  }
+  #Section3 > div > div {
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    border-bottom: 1px solid rgba(126, 124, 124, 0.8431372549);
+    width: 90vw;
+  }
+  #Section3 > div > div div {
+    display: flex;
+    width: 100%;
+    margin: 10px auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  #Section3 > div > div div i {
+    color: #00915a;
+    font-size: 1.3em;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid #00915a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+  }
+  #Section3 > div > div div p {
+    font-size: 1em;
+    color: #00915a;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    font-weight: bold;
+  }
+  #Section3 > div > div p {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+}
+
 /*# sourceMappingURL=Assurance.css.map */
