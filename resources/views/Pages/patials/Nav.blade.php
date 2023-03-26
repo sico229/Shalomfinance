@@ -29,11 +29,13 @@
             </a>
         </li>
         <li>
-            <span>
-                <i class="bi bi-wallet2"></i>
-                <span>{{ $version[22] }}</span>
-            </span>
-            <p>{{ $version[13] }}</p>
+            <a href="{{ route('Savings') }}">
+                <span>
+                    <i class="bi bi-wallet2"></i>
+                    <span>{{ $version[22] }}</span>
+                </span>
+                <p>{{ $version[13] }}</p>
+            </a>
         </li>
         <li>
             <span>

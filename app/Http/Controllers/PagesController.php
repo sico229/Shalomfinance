@@ -63,6 +63,9 @@ class PagesController extends Controller
     public function Assurance(){
         return Helpers::Viewer('Pages.Assurance');
     }
+    public function Savings(){
+        return Helpers::Viewer('Pages.Savings');
+    }
 
     /**
      * Show the form for creating a new resource.

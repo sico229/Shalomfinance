@@ -28,6 +28,7 @@ Route::get('/LoanRequest',[PagesController::class,"LoanRequest"])->name('LoanReq
 Route::get('/Conditions',[PagesController::class,"Conditions"])->name('Conditions');
 Route::get('/LoanSimulator',[PagesController::class,"LoanSimulator"])->name('LoanSimulator');
 Route::get('/Assurance',[PagesController::class,"Assurance"])->name('Assurance');
+Route::get('/Savings',[PagesController::class,"Savings"])->name('Savings');
 //Developper Routes
 Route::get('/Version',[DevelopperController::class,"Version"]);
 Route::get('/Traducteur',[DevelopperController::class,"Traducteur"]);
