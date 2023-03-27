@@ -38,11 +38,13 @@
             </a>
         </li>
         <li>
-            <span>
-                <i class="bi bi-graph-up-arrow"></i>
-                <span>{{ $version[14] }}</span>
-            </span>
-            <p>{{ $version[15] }}</p>
+            <a href="{{ route('Investment') }}">
+                <span>
+                    <i class="bi bi-graph-up-arrow"></i>
+                    <span>{{ $version[14] }}</span>
+                </span>
+                <p>{{ $version[15] }}</p>
+            </a>
         </li>
         <li>
             <span>

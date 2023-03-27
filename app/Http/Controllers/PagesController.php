@@ -66,6 +66,9 @@ class PagesController extends Controller
     public function Savings(){
         return Helpers::Viewer('Pages.Savings');
     }
+    public function Investment(){
+        return Helpers::Viewer('Pages.Investment');
+    }
 
     /**
      * Show the form for creating a new resource.

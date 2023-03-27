@@ -3,7 +3,6 @@
     <link rel="stylesheet" href="{{ asset('public/css/Savings.css') }}">
 @endsection
 @section('contenu')
-    )
     <section id="Section1">
         <div>
             <div class="cover"></div>
