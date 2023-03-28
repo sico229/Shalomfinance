@@ -1,0 +1,58 @@
+@import "_variables.scss";
+
+#Contact{
+    min-height: 100vh;
+}
+section{
+    padding: 10px 10px 10px 75px;
+}
+
+#Section1{
+    padding: 0;
+    &>div{
+        height: 30vh;
+        background-color: $themeColor2;       
+        color: #fff;
+        display: flex;
+        align-items: center;
+
+        h1{
+            font-weight: bolder;
+            padding: 10px 50px;
+        }
+    }
+}
+
+#Section2{
+    h4{
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 20px 10px;
+    }
+    div{
+        width:80%;
+        margin: 10px auto;
+        form{
+            padding: 20px 10px;
+            box-shadow: 1px 0px 2px #686666;
+
+            .sb{
+                display: flex;
+                justify-content: center;
+
+                button{
+                    padding: 10px;
+                    background-color: $themeColor2;
+                    color: #fff;
+                    width: 80%;
+                    transition: 0.2s;
+
+                    &:hover{
+                        background-color: $themeColor1;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+    }
+}

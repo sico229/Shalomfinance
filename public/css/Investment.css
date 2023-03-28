@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Montserrat+Alternates:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap");
+* {
+  font-family: "Oswald", sans-serif !important;
+}
+
 #Section1 {
   height: 40vh;
   margin: 0;
@@ -56,6 +61,7 @@
   color: #036640;
   font-weight: bolder;
   font-size: 2em;
+  padding: 20px 10px;
 }
 #Section3 > .container > div {
   display: grid;
@@ -88,8 +94,90 @@
   font-weight: bold;
   text-align: center;
 }
-#Section3 > .container > div:nth-child(2) > .row > .col-md-7 h5 {
+#Section3 > .container > .l2 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 50vh;
+  box-shadow: 2px 2px 2pc #252525;
+}
+#Section3 > .container > .l2 > .row > .col-md-5 img {
+  width: 100%;
+  height: 100%;
+}
+#Section3 > .container > .l2 > .row > .col-md-7 h5 {
   font-weight: bold;
+}
+
+#Section4 {
+  background-color: rgba(155, 154, 154, 0.2666666667);
+  padding: 20px 0;
+}
+#Section4 > div {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+#Section4 > div > div {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 15px;
+}
+#Section4 > div > div i {
+  font-size: 2em;
+  display: block;
+  text-align: center;
+  color: #00915a;
+  font-weight: bold;
+}
+#Section4 > div > div h4 {
+  font-weight: bold;
+  text-align: center;
+}
+#Section4 > div > div p {
+  text-align: center;
+}
+
+#Section5 {
+  padding: 20px 10px;
+}
+#Section5 > h4 {
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+#Section5 > p {
+  font-weight: bold;
+  padding: 5px 20px;
+}
+#Section5 > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+#Section5 > div > div {
+  background-color: rgba(155, 154, 154, 0.2666666667);
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: space-between;
+  height: 300px;
+}
+#Section5 > div > div i {
+  font-size: 2em;
+  color: #036640;
+  text-align: center;
+}
+#Section5 > div > div > p:nth-child(2), #Section5 > div > div > p:nth-child(3) {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+}
+#Section5 > div > div > p:nth-child(3) {
+  font-size: 1em;
 }
 
 /*# sourceMappingURL=Investment.css.map */

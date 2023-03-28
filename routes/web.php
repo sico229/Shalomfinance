@@ -30,6 +30,7 @@ Route::get('/LoanSimulator',[PagesController::class,"LoanSimulator"])->name('Loa
 Route::get('/Assurance',[PagesController::class,"Assurance"])->name('Assurance');
 Route::get('/Savings',[PagesController::class,"Savings"])->name('Savings');
 Route::get('/Investment',[PagesController::class,"Investment"])->name('Investment');
+Route::get('/Contact',[PagesController::class,"Contact"])->name('Contact');
 //Developper Routes
 Route::get('/Version',[DevelopperController::class,"Version"]);
 Route::get('/Traducteur',[DevelopperController::class,"Traducteur"]);

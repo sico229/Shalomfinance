@@ -47,25 +47,23 @@
             </a>
         </li>
         <li>
-            <span>
-                <i class="bi bi-chat-dots-fill"></i>
-                <span>{{ $version[16] }}</span>
-            </span>
-            <p>{{ $version[17] }}</p>
+            <a href="{{ route('Contact') }}">
+                <span>
+                    <i class="bi bi-chat-dots-fill"></i>
+                    <span>{{ $version[16] }}</span>
+                </span>
+                <p>{{ $version[17] }}</p>
+            </a>
         </li>
+
         <li>
-            <span>
-                <i class="bi bi-person-rolodex"></i>
-                <span>{{ $version[18] }}</span>
-            </span>
-            <p>{{ $version[19] }}</p>
-        </li>
-        <li>
-            <span>
-                <i class="bi bi-qr-code"></i>
-                <span>{{ $version[20] }}</span>
-            </span>
-            <p>{{ $version[21] }}</p>
+            <a href="{{ route('Login') }}">
+                <span>
+                    <i class="bi bi-qr-code"></i>
+                    <span>{{ $version[20] }}</span>
+                </span>
+                <p>{{ $version[21] }}</p>
+            </a>
         </li>
     </ul>
 </nav>

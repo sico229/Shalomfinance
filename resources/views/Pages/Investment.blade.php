@@ -81,7 +81,7 @@
             </div>
 
             <h4>OUVREZ UN COMPTE DÉDIÉ POUR L'INVESTISSEMENT EN BOURSE</h4>
-            <div>
+            <div class="l2">
                 <div class="row">
                     <div class="col-md-5">
                         <img src="{{ asset('public/img/invest/avantages-compte-pro-en-ligne.png') }}" alt=""
@@ -104,6 +104,56 @@
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <section id="Section4">
+        <div class="container">
+            <div>
+                <i class="bi bi-bank2"></i>
+                <h4>Compte d'Instruments Financiers</h4>
+                <p>Investissez sur une gamme étendue de valeurs mobilières, sans limitation de plafond, ni durée de
+                    détention imposée.
+
+                </p>
+            </div>
+            <div>
+                <i class="bi bi-wallet2"></i>
+                <h4>Plan d'Épargne en Actions
+
+                </h4>
+                <p>Dynamisez votre portefeuille en investissant dans des valeurs mobilières françaises et européennes tout
+                    en bénéficiant d'un cadre fiscal avantageux.
+
+                </p>
+            </div>
+            <div>
+                <i class="bi bi-piggy-bank"></i>
+                <h4>Plan d'Épargne en Actions PME-ETI
+
+                </h4>
+                <p>Diversifiez votre épargne en investissant dans les petites et moyennes entreprises - entreprises tailles
+                    intermédiaires en bénéficiant d'un cadre fiscal avantageux.
+
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="Section5">
+        <h4>DÉCOUVREZ NOS OUTILS</h4>
+        <p>Nos outils d'aide à la décision</p>
+        <div class="container">
+            <div>
+                <i class="bi bi-stars"></i>
+                <p class="p1">Strategy builder</p>
+                <p>Investissez dans ce qui vous inspire, des thèmes populaires aux stratégies d'expert.</p>
+            </div>
+            <div>
+                <i class="bi bi-graph-up-arrow"></i>
+                <p class="p1">Technical insight</p>
+                <p>Identifiez les figures graphiques et les évènements techniques pour guider vos stratégies
+                    d'investissement.</p>
+            </div>
         </div>
     </section>
 @endsection
