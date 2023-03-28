@@ -56,3 +56,18 @@ section{
         }
     }
 }
+
+@media screen and (max-width:720px){
+    section{
+        padding: 5px;
+    }
+    #Section2{
+        &>div{
+            width:100%;
+
+            form{
+                padding: 5px;
+            }
+        }
+    }
+}

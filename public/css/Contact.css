@@ -56,4 +56,16 @@ section {
   transition: 0.2s;
 }
 
+@media screen and (max-width: 720px) {
+  section {
+    padding: 5px;
+  }
+  #Section2 > div {
+    width: 100%;
+  }
+  #Section2 > div form {
+    padding: 5px;
+  }
+}
+
 /*# sourceMappingURL=Contact.css.map */
