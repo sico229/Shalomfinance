@@ -39,6 +39,7 @@ Route::post('/Traducteur',[DevelopperController::class,"SaveTraducteur"]);
 
 //UserRoutes
 Route::get('/AccountResquest',[UserController::class,"Register"])->name('Register');
+Route::post('/SaveRegister',[UserController::class,"SaveRegister"])->name('SaveRegister');
 Route::get('/AccountLogin',[UserController::class,"Register"])->name('Login');
 
 

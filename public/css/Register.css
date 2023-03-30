@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Montserrat+Alternates:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap");
+@import url("https://unpkg.com/css.gg@2.0.0/icons/css/stopwatch.css");
+* {
+  font-family: "Oswald", sans-serif !important;
+}
+
+#Register {
+  padding: 10px 10px 10px 75px;
+}
+#Register #Section1 {
+  min-height: 100vh;
+}
+#Register #Section1 .container:nth-child(1) {
+  display: flex;
+  justify-content: center;
+}
+#Register #Section1 .container:nth-child(1) > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#Register #Section1 .container:nth-child(1) > div img {
+  padding: 0 20px;
+  width: 100%;
+}
+#Register #Section1 .container:nth-child(1) > div h1 {
+  font-size: 1.5em;
+}
+#Register #Section1 .container:nth-child(2) {
+  display: flex;
+  padding: 20px 5px;
+}
+#Register #Section1 .container:nth-child(2) > div {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Register #Section1 .container:nth-child(2) > div > div {
+  height: 50%;
+}
+#Register #Section1 .container:nth-child(2) > div > div:nth-child(2) {
+  display: flex;
+}
+#Register #Section1 .container:nth-child(2) > div > div:nth-child(2) > p:nth-child(1) {
+  font-size: 2em;
+  color: #00915a;
+}
+#Register #Section1 .container:nth-child(2) > div > div:nth-child(2) > p:nth-child(2) {
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+#Register #Section1 .container:nth-child(3) > h4 {
+  width: 100%;
+  text-align: center;
+  font-weight: bolder;
+}
+#Register #Section1 .container:nth-child(3) > div {
+  padding: 10px;
+  background-color: #00915a;
+  color: #fff;
+}
+#Register #Section1 .container:nth-child(3) > div p {
+  margin: 0;
+  text-align: center;
+}
+#Register #Section1 .container:nth-child(3) > div p i {
+  font-size: 2em;
+  padding-right: 10px;
+}
+#Register #Section1 .container:nth-child(4) > .form-group > div {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+#Register #Section1 .container:nth-child(4) > .form-group > div .radio-inputs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 0.25rem;
+  width: 100%;
+  font-size: 14px;
+}
+#Register #Section1 .container:nth-child(4) > .form-group > div .radio-inputs .radio {
+  flex: 1 1 auto;
+  text-align: center;
+}
+#Register #Section1 .container:nth-child(4) > .form-group > div .radio-inputs .radio input {
+  display: none;
+}
+#Register #Section1 .container:nth-child(4) > .form-group > div .radio-inputs .radio .name {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  height: 5em;
+  border-radius: 2.5em;
+  border: none;
+  padding: 0.5rem 0;
+  color: #00915a;
+  border: 2px solid #00915a;
+  transition: all 0.15s ease-in-out;
+}
+#Register #Section1 .container:nth-child(4) > .form-group > div .radio-inputs .radio input:checked + .name {
+  background-color: #00915a;
+  color: #fff;
+  font-weight: 600;
+}
+#Register #Section1 .container:nth-child(4) > div {
+  width: 80%;
+  /* reset input */
+}
+#Register #Section1 .container:nth-child(4) > div .form__group {
+  position: relative;
+  padding: 20px 0 0;
+  margin-top: 10px;
+  width: 70%;
+}
+#Register #Section1 .container:nth-child(4) > div .form__field {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 17px;
+  color: #00915a;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+#Register #Section1 .container:nth-child(4) > div .form__field::placeholder {
+  color: transparent;
+}
+#Register #Section1 .container:nth-child(4) > div .form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
+}
+#Register #Section1 .container:nth-child(4) > div .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #036640;
+  pointer-events: none;
+}
+#Register #Section1 .container:nth-child(4) > div .form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #036640, #00915a);
+  border-image-slice: 1;
+}
+#Register #Section1 .container:nth-child(4) > div .form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #00915a;
+  font-weight: 700;
+}
+#Register #Section1 .container:nth-child(4) > div .form__field:required, #Register #Section1 .container:nth-child(4) > div .form__field:invalid {
+  box-shadow: none;
+}
+#Register .enregistreur {
+  padding: 10px;
+  border: 1px solid #00915a;
+  color: #00915a;
+  transition: 0.2s;
+  width: 70%;
+  margin: 5px auto;
+}
+#Register .enregistreur:hover {
+  background-color: #00915a;
+  transition: 0.2s;
+  color: #fff;
+}
+
+@media screen and (max-width: 730px) {
+  #Register {
+    padding: 10px;
+  }
+  #Register #Section1 > .container:nth-child(1) > div:nth-child(2) > h1 {
+    font-size: 0.9em;
+  }
+  #Register #Section1 > .container:nth-child(2) > div > div:nth-child(2) > p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  #Register #Section1 .container:nth-child(4) > div {
+    width: 100%;
+  }
+  #Register #Section1 .container:nth-child(4) > div > .form__group {
+    width: 100%;
+  }
+  #Register #Section1 .container:nth-child(4) > .form-group {
+    width: 100%;
+  }
+  #Register #Section1 .container:nth-child(4) > .form-group > div {
+    width: 100%;
+  }
+  #Register #Section1 .container:nth-child(4) > .form-group > div .radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    border-radius: 2.5em;
+    border: none;
+    padding: 0.5rem 0;
+    color: #00915a;
+    border: 2px solid #00915a;
+    transition: all 0.15s ease-in-out;
+  }
+  #Register .enregistreur {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=Register.css.map */
