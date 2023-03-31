@@ -32,6 +32,7 @@ Route::get('/Assurance',[PagesController::class,"Assurance"])->name('Assurance')
 Route::get('/Savings',[PagesController::class,"Savings"])->name('Savings');
 Route::get('/Investment',[PagesController::class,"Investment"])->name('Investment');
 Route::get('/Contact',[PagesController::class,"Contact"])->name('Contact');
+
 //Developper Routes
 Route::get('/Version',[DevelopperController::class,"Version"]);
 Route::get('/Traducteur',[DevelopperController::class,"Traducteur"]);
@@ -41,6 +42,8 @@ Route::post('/Traducteur',[DevelopperController::class,"SaveTraducteur"]);
 Route::get('/AccountResquest',[UserController::class,"Register"])->name('Register');
 Route::post('/SaveRegister',[UserController::class,"SaveRegister"])->name('SaveRegister');
 Route::get('/AccountLogin',[UserController::class,"Register"])->name('Login');
+Route::get('/req/{user}',[UserController::class,"req"])->name('Req');
+Route::get('/Documents/{user}',[UserController::class,"Documents"])->name('Documents');
 
 
 //Loan Requests

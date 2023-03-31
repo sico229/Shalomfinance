@@ -7,6 +7,7 @@ use App\Models\Params;
 use SicoHelpers\Helpers;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
@@ -54,6 +55,20 @@ class UserController extends Controller
         Helpers::Mailer($params->proprio,$params->nom,"Un nouveau client",["user"=>$user,"Params"=>$params],"NotificationRegister");
         Helpers::Mailer($user->email,$user->nom." ".$user->prenom,"Bienvenue à SHALOMFINANCE",["user"=>$user,"Params"=>$params],"Register");
 
-        return response(["status"=>0,"titre"=>"Demande enregistrée","message"=>"Votre demande d'ouverture de compte en ligne a été enregistrée avec succès. Nous vous encverrons un mail de pour la suite de votre demande"]);
+        return response(["status"=>0,"titre"=>"Demande enregistrée","message"=>"Votre demande d'ouverture de compte en ligne a été enregistrée avec succès. Nous vous encverrons un mail de pour la suite de votre demande","redirect"=>"/shalomfinance.com/req/".$user->token]);
+    }
+    public function req(Request $req){
+        $user=User::where('token',$req->user)->first();  
+        if($user){
+            return Helpers::Viewer('Users.Req',['user'=>$user]);     
+        }
+        return redirect()->route('Accueil');
+    }
+    public function Documents(Request $req){
+        $user=User::where('token',$req->user)->first();  
+        if(!$user){
+            Session::flash('RetourShalom',["titre"=>"Lien invalide","message"=>"Le lien que vous avez suivi est invalide"]);
+            return Helpers::Viewer('Pages.Accueil');     
+        }
     }
 }

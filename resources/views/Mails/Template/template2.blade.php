@@ -12,6 +12,7 @@
         }
 
         body {
+            width: 650px;
             margin: 0;
             padding: 0;
         }
@@ -162,7 +163,8 @@
                                                             <td class="pad">
                                                                 <div
                                                                     style="color:#ffffff;direction:ltr;font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:14px;font-weight:400;letter-spacing:0px;line-height:120%;text-align:left;mso-line-height-alt:16.8px;">
-                                                                    <p style="margin: 0;">{{ $Params->adresse . ' ' }}</p>
+                                                                    <p style="margin: 0;">{{ $Params->adresse . ' ' }}
+                                                                    </p>
                                                                     <p style="margin: 0;">{{ $Params->telephone . ' ' }}
                                                                     </p>
                                                                 </div>

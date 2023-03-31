@@ -97,7 +97,16 @@ $jq(document).ready(function ($) {
                     email: email,
                 },
                 function (data) {
-                    console.log(data);
+                    $(".loader2Container").fadeOut().css("display", "none");
+                    if (data.status == 1) {
+                        //Erreur
+                        $(".modal-body").html(
+                            "<p class='text-danger'>" + data.message + "</p>"
+                        );
+                        myModal.show();
+                    } else if (data.status == 0) {
+                        window.location.href = data.redirect;
+                    }
                 }
             );
         }
