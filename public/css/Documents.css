@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@200&family=Montserrat+Alternates:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&display=swap");
+* {
+  font-family: "Oswald", sans-serif !important;
+}
+
+#Documents {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  flex-direction: column !important;
+}
+#Documents > .container {
+  padding: 20px;
+}
+#Documents form {
+  width: 70%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  height: 70px;
+}
+#Documents form .btn {
+  border: 1px solid #00915a !important;
+  color: #00915a;
+  transition: 0.2s;
+  display: block;
+  padding: 10px !important;
+  margin: 1px auto;
+}
+#Documents form .btn:hover {
+  background-color: #00915a;
+  color: #fff;
+  transition: 0.2s;
+}
+#Documents form > div {
+  width: 100%;
+  min-height: 20%;
+  position: relative;
+  margin: 10px 0;
+}
+#Documents form input[type=file] {
+  display: none;
+}
+#Documents form #preview1, #Documents form #preview2 {
+  display: flex;
+  margin: 10px 0;
+}
+#Documents form #preview1 img, #Documents form #preview2 img {
+  width: 120px;
+  margin: 0 5px;
+}
+#Documents form label {
+  color: #036640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  width: 80%;
+  background-color: aquamarine;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px #00915a;
+  transition: 0.2s;
+}
+#Documents form label i {
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 720px) {
+  #Documents {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+  }
+  #Documents form {
+    width: 90%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  #Documents form > div {
+    width: 100%;
+    min-height: 20%;
+    position: relative;
+    margin: 5px auto;
+  }
+  #Documents form input[type=file] {
+    display: none;
+  }
+  #Documents form #preview1, #Documents form #preview2 {
+    display: flex;
+    margin: 10px 0;
+  }
+  #Documents form #preview1 img, #Documents form #preview2 img {
+    width: 120px;
+    margin: 0 5px;
+  }
+  #Documents form label {
+    color: #036640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: aquamarine;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #00915a;
+    transition: 0.2s;
+  }
+  #Documents form label i {
+    font-size: 1.5em;
+  }
+}
+
+/*# sourceMappingURL=Documents.css.map */

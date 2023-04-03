@@ -1,0 +1,154 @@
+@import "_variables.scss";
+#Documents{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    flex-direction: column !important;
+
+    &>.container{
+        padding: 20px;
+    }
+
+    form{
+        width: 70%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        height: 70px;
+
+        .btn{
+            border:1px solid $themeColor2 !important;
+            color: $themeColor2;
+            transition: 0.2s;
+            display: block;
+            padding: 10px !important;
+            margin: 1px auto;
+
+            &:hover{
+                background-color: $themeColor2;
+                color: #fff;
+                transition: 0.2s;
+            }
+            
+        }
+
+
+       &>div{
+        width: 100%;
+        min-height: 20%;
+        position: relative;
+        margin: 10px 0;
+       }
+
+        input[type="file"]{
+            display: none;
+        }
+        #preview1,#preview2{
+            display: flex;
+            margin: 10px 0;
+            
+
+            img{
+                width: 120px;
+                margin: 0 5px;
+            }
+        }
+        label{
+            color: $themeColor1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-direction: column;
+            width: 80%;
+            background-color: aquamarine;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 2px 2px 3px $themeColor2;
+            transition: 0.2s;
+                       
+            i{
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+@media screen and (max-width:720px){
+    #Documents{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+    
+        form{
+            width: 90%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+           
+           &>div{
+            width: 100%;
+            min-height: 20%;
+            position: relative;
+            margin: 5px auto;
+
+            
+            
+           }
+    
+            input[type="file"]{
+                display: none;
+            }
+            #preview1,#preview2{
+                display: flex;
+                margin: 10px 0;
+                
+    
+                img{
+                    width: 120px;
+                    margin: 0 5px;
+                }
+            }
+            label{
+                color: $themeColor1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                flex-direction: column;
+                width: 100%;
+                background-color: aquamarine;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                font-size: 14px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                box-shadow: 2px 2px 3px $themeColor2;
+                transition: 0.2s;
+                           
+                i{
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}

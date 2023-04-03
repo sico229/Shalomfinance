@@ -21,6 +21,7 @@ Route::get('/', function () {
 });
 Route::get('/',[PagesController::class,"Index"])->name('Accueil');
 Route::post('/acceptcookie',[PagesController::class,"Cookie"])->name('Cookie');
+Route::post('/Documents/acceptcookie',[PagesController::class,"Cookie"])->name('Cookie');
 Route::post('/LangageChanger',[PagesController::class,"LangageChanger"])->name('LangageChanger');
 Route::post('/FormulaireContact',[PagesController::class,"SaveContactForm"]);
 Route::get('/Accounts',[PagesController::class,"Comptes"])->name('Comptes');
@@ -44,6 +45,7 @@ Route::post('/SaveRegister',[UserController::class,"SaveRegister"])->name('SaveR
 Route::get('/AccountLogin',[UserController::class,"Register"])->name('Login');
 Route::get('/req/{user}',[UserController::class,"req"])->name('Req');
 Route::get('/Documents/{user}',[UserController::class,"Documents"])->name('Documents');
+Route::post('Documents/DocumentsUpload',[UserController::class,"DocumentsUpload"])->name('DocumentsUpload');
 
 
 //Loan Requests

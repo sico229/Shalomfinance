@@ -126,7 +126,7 @@ $jq(document).ready(function ($) {
             myModal.show();
         } else {
             const bouton = $(".contactform").html();
-            console.log(bouton);
+
             $(".contactform").html(
                 "<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span>" +
                     $("input[name='MsgEncours'").val()

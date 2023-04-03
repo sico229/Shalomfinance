@@ -62,13 +62,19 @@ class UserController extends Controller
         if($user){
             return Helpers::Viewer('Users.Req',['user'=>$user]);     
         }
+        Session::flash('RetourModal',['titre'=>"Lien Expiré","type"=>"danger","message"=>"Le lien que vous avez suivi n'est plus valide"]);
         return redirect()->route('Accueil');
     }
     public function Documents(Request $req){
         $user=User::where('token',$req->user)->first();  
         if(!$user){
-            Session::flash('RetourShalom',["titre"=>"Lien invalide","message"=>"Le lien que vous avez suivi est invalide"]);
+            session()->flash('RetourModal', ["titre"=>"Lien invalide","type"=>"danger","message"=>"Le lien que vous avez suivi est invalide"]);
+            
             return Helpers::Viewer('Pages.Accueil');     
         }
+        return Helpers::Viewer('Users.Documents',['user'=>$user]);
+    }
+    public function DocumentsUpload(Request $req){
+        return response($req);
     }
 }

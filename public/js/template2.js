@@ -35,7 +35,13 @@ jQuery(document).ready(function ($) {
     });
 
     //Retour Modal
-    bootstrap.Modal(document.getElementById("RestourModal"), {}).show();
+    if (document.getElementById("RetourModal2")) {
+        var RetourModal = new bootstrap.Modal(
+            document.getElementById("RetourModal2"),
+            {}
+        );
+        RetourModal.show();
+    }
 
     function Modaler(title = null, contenu = null, position = null) {
         var myModal = new bootstrap.Modal(
