@@ -399,7 +399,7 @@ class Helpers{
     }
 
     public static function Mailer($emailDestinantaire,$nomDestinataire,$objet,$data=null,$vue,$attachment=null){
-
+        
         $params=$Params=Params::where('id',1)->first();
         $data['params']=$params;
         return Mail::send(['html'=>'Mails.html.'.$vue,'text'=>'Mails.text.'.$vue], $data, function ($message) use ($emailDestinantaire,$nomDestinataire,$params,$objet,$attachment) {
@@ -409,8 +409,9 @@ class Helpers{
             $message->replyTo($params->emailer, $params->nomEmailer.' '.$params->prenomEmailer);
             $message->subject($objet);
             $message->priority(3);
+          
             if($attachment!=null){
-                foreach ($attachment as $key => $value) {
+                foreach ($attachment as $key => $value) {                    
                     $message->attach("public/storage/".$value);
                 }
             }

@@ -1,6 +1,6 @@
 @import "_variables.scss";
 #Documents{
-    min-height: 100vh;
+    min-height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
 
     form{
         width: 70%;
-        min-height: 100vh;
+        min-height: 600px;
         display: flex;
         flex-direction: column;
         padding: 10px;
@@ -39,7 +39,7 @@
 
        &>div{
         width: 100%;
-        min-height: 20%;
+        min-height: 200px !important;
         position: relative;
         margin: 10px 0;
        }

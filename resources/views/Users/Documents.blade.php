@@ -31,12 +31,16 @@
             <p>Après envoi de vos documents, nos services anti-fraude étudieront la validité de vos justificatifs et nous
                 procéderont à l'ouverture de votre compte en ligne si vos documents sont autentiques</p>
         </div>
-        <form action="">
+        <form action="" enctype="multipart/form-data">
             <div>
+                <input type="hidden" name="user" value="{{ $user->token }}">
                 <div class="form-group col-sm-4 my-2">
                     <input type="hidden" name="ErrType" class="ErrType"
                         value="Veuillez préciser le type de document d'identité">
                     <input type="hidden" name="Erreurs" value="Erreur dans votre formulaire">
+                    <input type="hidden" name="RetourUpload"
+                        value="Vos documents ont bien été envoyés. Nous les étudions et vous aurez un retour dans les heures à suivre. Merci de nous choisir">
+                    <input type="hidden" name="DocumentsEnvoyes" value="Documents envoyés">
                     <select class="form-select form-select-sm typeIdentite" aria-label=".form-select-sm example">
                         <option value="" selected>Type de justificatif d'identité</option>
                         <option value="Carte Nationale d'identité">Carte Nationale d'identité</option>
@@ -49,12 +53,11 @@
 
                 </div>
                 <div class="input-group mb-3">
-                    <input type="file" id="identite" name="images[]" accept="image/*" multiple
-                        onchange="previewImages()">
+                    <input type="file" id="identiteFiles" name="identites[]" multiple>
                     <input type="hidden" name="identiteVide"
                         value="Vous n'avez pas choisi une photo de votre justificatif d'identité">
 
-                    <label for="identite" class="identite">
+                    <label for="identiteFiles" class="identite">
                         <i class="bi bi-cloud-upload"></i>
                         Choisir les photos de votre justificatif d'identite
                     </label>
@@ -75,14 +78,13 @@
 
                 </div>
                 <div class="input-group mb-3">
-                    <input type="file" id="domicile" name="images[]" accept="image/*" multiple
-                        onchange="previewImages2()">
+                    <input type="file" id="domicileFile" name="images[]" accept="image/*" multiple>
                     <input type="hidden" name="domicileVide"
                         value="Vous n'avez pas choisi une photo de votre justificatif de domicile">
 
-                    <label for="domicile" class="domicile">
+                    <label for="domicileFile" class="domicile">
                         <i class="bi bi-cloud-upload"></i>
-                        Choisir les photos de votre justificatif d'identite
+                        Choisir les photos de votre justificatif de domicile
                     </label>
                 </div>
             </div>

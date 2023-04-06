@@ -5,7 +5,7 @@
 }
 
 #Documents {
-  min-height: 100vh;
+  min-height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@
 }
 #Documents form {
   width: 70%;
-  min-height: 100vh;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -39,7 +39,7 @@
 }
 #Documents form > div {
   width: 100%;
-  min-height: 20%;
+  min-height: 200px !important;
   position: relative;
   margin: 10px 0;
 }
